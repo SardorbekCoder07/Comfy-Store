@@ -1,7 +1,5 @@
 # Comfy Store
-
-Bu mening React loyiham.
-# Comfy Store
+![GitHub stars](https://img.shields.io/github/stars/SardorbekCoder07/COMFYSTORE?style=social)
 ![Comfy Store](./src/assets/Review/light.png)
 ![Comfy Store](./src/assets/Review/dark.png)
 
