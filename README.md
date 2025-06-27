@@ -1,5 +1,7 @@
 # Comfy Store
 ![GitHub stars](https://img.shields.io/github/stars/SardorbekCoder07/Comfy-Store?style=social)
+![GitHub forks](https://img.shields.io/github/forks/SardorbekCoder07/Comfy-Store?style=social)
+[Comfy-Store](https://sizning-havolangiz.com)
 ![Comfy Store](./src/assets/Review/light.png)
 ![Comfy Store](./src/assets/Review/dark.png)
 
