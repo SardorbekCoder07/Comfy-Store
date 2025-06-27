@@ -2,6 +2,8 @@
 ![GitHub stars](https://img.shields.io/github/stars/SardorbekCoder07/Comfy-Store?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/SardorbekCoder07/Comfy-Store?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/SardorbekCoder07/Comfy-Store)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/SardorbekCoder07/Comfy-Store/latest)
+
 ![Comfy Store](./src/assets/Review/light.png)
 ![Comfy Store](./src/assets/Review/dark.png)
 
