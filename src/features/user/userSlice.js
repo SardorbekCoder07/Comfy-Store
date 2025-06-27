@@ -1,9 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { toast } from 'sonner'
 
+const themes = {
+	winter: 'winter',
+	dracula: 'dracula'
+}
+
+const getThemeFromLocalStorage = () => {
+	const theme = localStorage.getItem('theme') || themes.winter
+	document.documentElement.setAttribute('data-theme', theme)
+	return theme
+}
+
 const initialState = {
 	user: { username: 'coding addict' },
-	theme: 'dracula'
+	theme: getThemeFromLocalStorage(),
 }
 
 const userSlice = createSlice({
@@ -13,14 +24,19 @@ const userSlice = createSlice({
 		loginUser: (state, action) => {
 			console.log('Login')
 		},
-		loginOut: (state) => {
-			console.log('logout')
+		logoutUser: (state) => {
+			state.user = null
+			localStorage.removeItem('user')
+			toast.success("Logged out successfully")
 		},
 		toggleTheme: (state) => {
-			console.log('toggle theme')
+			const { dracula, winter } = themes
+			state.theme = state.theme === dracula ? winter : dracula
+			document.documentElement.setAttribute('data-theme', state.theme)
+			localStorage.setItem('theme', state.theme)
 		},
 	}
 })
 
-export const {loginOut,loginUser,toggleTheme} = userSlice.actions
+export const { logoutUser, loginUser, toggleTheme } = userSlice.actions
 export default userSlice.reducer
