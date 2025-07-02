@@ -8,7 +8,6 @@ export const loader = async () => {
 
 }
 
-
 const Landing = () => {
 	return (
 		<>
