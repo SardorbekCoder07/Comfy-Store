@@ -24,7 +24,7 @@ export const action =
       }
 
       try {
-        const response = await customFetch.post(
+        const _response = await customFetch.post(
           '/orders',
           { data: info },
           {
